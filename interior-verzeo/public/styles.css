@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    --webkit-box-sizing: border-box;
+    --max-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: inherit;   
+}
+
+
+/* Navbar Section */
+
+.navbar-brand {
+    padding: 0 10px 5px;
+}
+
+.navbar {
+    padding: 1rem 3rem;
+}
+
+
+/* Home Section */
+
+.background-image {
+    background-image: url(../images/interior-verzeo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline block;
+    position: relative;
+    min-height: 600px;
+}
+
+.front-text {
+    color: white;
+    font-size: 300%;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 16%;
+}
+
+.front-second-text {
+    font-size: 175%;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+/* Portfolio Section */
+
+.middle-text {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 100px;
+}
+
+.content-max-width {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 33.333% 33.333% 33.333%;
+    grid-gap: 10px;
+    margin-top: 90px;
+}
+
+@media screen and (max-width: 1000px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 100%;
+        margin-top: 50px;
+    }
+    .content-max-width {
+        margin: auto;
+        max-width: 90%;
+    }
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    height: 240px;
+    background-size: 100% 240px;
+    background-repeat: no-repeat;
+    background-image: url("../images/kitchen-image.png");
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+}
+
+.container:hover .overlay {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.text {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    text-transform: capitalize;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.image2 {
+    height: 240px;
+    background-size: 100% 240px;
+    background-repeat: no-repeat;
+    background-image: url("../images/sofa-image.jpg");
+}
+
+.image3 {
+    display: block;
+    height: 240px;
+    background-size: 100% 240px;
+    background-repeat: no-repeat;
+    background-image: url("../images/neo-design.jpg");
+}
+
+.image4 {
+    height: 240px;
+    background-size: 100% 240px;
+    background-repeat: no-repeat;
+    background-image: url("../images/living-room.jpg");
+}
+
+.image5 {
+    display: block;
+    height: 240px;
+    background-size: 100% 240px;
+    background-repeat: no-repeat;
+    background-image: url("../images/dining-room.jpg");
+}
+
+.image6 {
+    height: 240px;
+    background-size: 100% 240px;
+    background-repeat: no-repeat;
+    background-image: url("../images/bathroom.jpg");
+}
+
+
+/* ************** About Section ********************* */
+
+.arc-text {
+    
+    font-size: 325%;
+    margin-top: 70px;
+    text-align: center;
+    font-family: "Playfair Display";
+}
+
+.right-image {
+    max-width: 100%;
+    margin-top: 80px;
+    margin-left: 80px;
+    margin-right: 80px;
+    height: 550px;
+    background-image: url("../images/about-image.jpg");
+    background-size: 100% 400px;
+    background-repeat: no-repeat;
+}
+
+.indentation {
+    max-width: 1110px;
+    margin: auto;
+}
+
+.wikipedia {
+    font-family: 'Roboto', sans-serif;
+    font-size: 110%;
+    color: rgb(24, 22, 22);
+    text-align: justify;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+@media only screen and (min-width: 1100px){
+
+    .arc-text {
+        color: rgb(63, 62, 62);
+        font-size: 325%;
+        margin-top: 70px;
+        text-align: center;
+        font-family: "Playfair Display";
+    }
+    
+    .right-image {
+        float: left;
+        width: 100%;
+        margin-top: 80px;
+        height: 550px;
+        background-image: url("../images/about-image.jpg");
+        background-size: 100% 400px;
+        background-repeat: no-repeat;
+    }
+    
+    .image-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 40px;
+    }
+    
+    .wikipedia {
+        font-family: 'Roboto', sans-serif;
+        font-size: 110;
+        color: rgb(24, 22, 22);
+        text-align: left;
+        margin-top: 70px;
+    }
+    
+    }
+
+/* Services Section */
+
+.middle-heading {
+    margin: 70px 0 0 20px;
+    color: rgb(0, 0, 0);
+    font-size: 325%;
+    font-family: 'Monsterrat', sans-serif;
+}
+
+@media screen and (max-width: 1119px) {
+    .middle-heading {
+        float: none;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .middle-heading {
+        font-size: 8vw;
+    }
+}
+
+.small-heading {
+    color: orange;
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px 0 0 22px;
+}
+
+@media screen and (max-width: 1119px) {
+    .small-heading {
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .small-heading {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 90%;
+        margin-left: 0px;
+    }
+}
+
+.grid-container4 {
+    display: grid;
+    grid-template-columns: 33.333% 33.333% 33.333%;
+}
+
+@media screen and (max-width: 1120px) {
+    .grid-container4 {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 668px) {
+    .grid-container4 {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media screen and (max-width: 543px) {
+    .grid-container4 {
+        grid-template-columns: 100%;
+    }
+}
+
+.indoor-text {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fa-puzzle-piece {
+    color: orange;
+    margin-top: 40px;
+}
+
+.fa-compass {
+    color: orange;
+    margin-top: 40px;
+}
+
+.fa-heart {
+    color: orange;
+    margin-top: 40px;
+}
+
+.fa-pencil-alt {
+    color: orange;
+    margin-top: 40px;
+}
+
+.fa-building {
+    color: orange;
+    margin-top: 40px;
+}
+
+.fa-lightbulb {
+    color: orange;
+    margin-top: 40px;
+}
+
+
+/* Pricing Section  */
+#pricing{
+    
+    padding:0 100px 0 100px;                                 
+    text-align: center;
+}
+.pricing-column{
+    padding:3%2%;
+}
+
+/* Footer Section */
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    padding: 2rem 0;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.footer__title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer__social {
+    margin-bottom: 2rem;
+}
+
+.footer__icon {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0 1rem
+}

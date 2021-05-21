@@ -1,0 +1,152 @@
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
+    <style>     
+       body{
+            margin: 0;
+            background-image: url("images/8.jpg");
+            color: black;
+            font-family: "Times New Roman", Georgia, Serif;
+        }
+
+        html {
+            height: 100%;
+            font-family:"Times New Roman", Georgia, Serif;
+        }
+
+        h1{
+            font-family: "Playfair Display";
+            color: whitesmoke;
+            text-align: center;
+            font-size: 3em;
+        }   
+
+        p{
+            text-indent: 50px;
+            text-align: justify;
+            line-height: 2vw;
+            padding: 1%;
+        }
+
+        input{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: none;
+            border-radius: 40px;
+            border: 2px solid rgb(202, 202, 202);
+            background-color: whitesmoke;
+            color: black;
+        }
+
+        #submit {
+            background-color: green;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 40px;
+            float: right;
+            cursor: pointer;
+        }
+        
+        #submit:hover {
+            background-color: greenyellow;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+ 
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .col-s-1 {width: 8.33%;}
+            .col-s-2 {width: 16.66%;}
+            .col-s-3 {width: 25%;}
+            .col-s-4 {width: 33.33%;}
+            .col-s-5 {width: 41.66%;}
+            .col-s-6 {width: 50%;}
+            .col-s-7 {width: 58.33%;}
+            .col-s-8 {width: 66.66%;}
+            .col-s-9 {width: 75%;}
+            .col-s-10 {width: 83.33%;}
+            .col-s-11 {width: 91.66%;}
+            .col-s-12 {width: 100%;}
+        }
+
+
+        @media only screen and (min-width: 768px) {
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+        }
+
+        @media only screen and (min-width: 1080px) {
+            .col-t-1 {width: 8.33%;}
+            .col-t-2 {width: 16.66%;}
+            .col-t-3 {width: 25%;}
+            .col-t-4 {width: 33.33%;}
+            .col-t-5 {width: 41.66%;}
+            .col-t-6 {width: 50%;}
+            .col-t-7 {width: 58.33%;}
+            .col-t-8 {width: 66.66%;}
+            .col-t-9 {width: 75%;}
+            .col-t-10 {width: 83.33%;}
+            .col-t-11 {width: 91.66%;}
+            .col-t-12 {width: 100%;}
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="row" style="background-image: url(images/8.jpg);" >
+        <div class="col-2 col-s-1 col-t-3"></div>
+        <div class="col-8 col-s-10 col-t-6">
+            <h1>Contact Us</h1>    
+        </div>
+        <div class="col-2 col-s-1 col-t-3"></div>
+    </div>
+
+    <div class="row" style="background-image: url(images/8.jpg);" >
+        <div class="col-2 col-s-1 col-t-3"></div>
+        <div class="col-8 col-s-10 col-t-6" style="background-color: white; border-radius: 40px;">
+            <form action="/submit" method="post">
+                <label for="fname" style="font-weight: bold; font-size: larger;">First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter First Name">
+                
+                <label for="lname" style="font-weight: bold; font-size: larger;">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Enter Last Name">
+
+                <label for="email" style="font-weight: bold;font-size: larger; ">E-mail</label>
+                <input type="text" id="email" name="email" placeholder="E-mail address">
+                
+                <label for="phone" style="font-weight: bold;font-size: larger;">Phone</label>
+                <input id="phone" name="number" type="text" placeholder="Mobile Number">
+                
+                <button id="submit">Submit</button>
+            </form>
+        </div>
+        <div class="col-2 col-s-1 col-t-3"></div>
+    </div> 
+</body>
+</html>
